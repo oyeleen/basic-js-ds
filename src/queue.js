@@ -23,8 +23,8 @@ class Queue {
   }
 
   enqueue(value) {
-    let new_node = new ListNode(value);
-    if (!this.head) { 
+    let new_node = { value, next: null };
+    if (!this.head) {
       this.head = new_node;
       this.tail = new_node;
     }
@@ -41,7 +41,7 @@ class Queue {
       return value;
     }
     else
-      return null;
+      return undefined;
   }
 }
 
