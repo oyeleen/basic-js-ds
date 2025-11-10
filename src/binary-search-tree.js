@@ -23,7 +23,7 @@ class BinarySearchTree {
         return node;
       }
 
-      if (!node.data === data) {
+      if (node.data === data) {
         return node;
       }
 
